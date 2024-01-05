@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8febbf5b-5f6e-4250-93f6-112db4ca8de9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Zador_TeleBot/lecture_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zador_TeleBot/lecture_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zador_TeleBot/photo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zador_TeleBot/lecture_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zador_TeleBot/lecture_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +40,9 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Python.general.executor": "Run",
+    "Python.lecture_1.executor": "Run",
     "Python.lecture_2.executor": "Run",
+    "Python.lecture_3.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -56,6 +61,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="X:\Programmes\my_projects\my_projects\Zador_TeleBot" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704462731871</updated>
-      <workItem from="1704462732973" duration="10218000" />
+      <workItem from="1704462732973" duration="22129000" />
     </task>
     <servers />
   </component>
@@ -79,7 +89,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/my_projects$lecture_3.coverage" NAME="lecture_3 Coverage Results" MODIFIED="1704493197651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zador_TeleBot" />
     <SUITE FILE_PATH="coverage/my_projects$general.coverage" NAME="general Coverage Results" MODIFIED="1704468197610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zador_TeleBot" />
-    <SUITE FILE_PATH="coverage/my_projects$lecture_2.coverage" NAME="lecture_2 Coverage Results" MODIFIED="1704473854771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zador_TeleBot" />
+    <SUITE FILE_PATH="coverage/my_projects$lecture_1.coverage" NAME="lecture_1 Coverage Results" MODIFIED="1704485846437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zador_TeleBot" />
+    <SUITE FILE_PATH="coverage/my_projects$lecture_2.coverage" NAME="lecture_2 Coverage Results" MODIFIED="1704489326529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zador_TeleBot" />
   </component>
 </project>

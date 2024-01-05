@@ -14,7 +14,18 @@ def static(message):
     button2 = types.KeyboardButton('Кнопка №2')
     button3 = types.KeyboardButton('Кнопка №3')
     markup.row(button2, button3)
-    bot.send_message(message.chat.id, 'Привет', reply_markup=markup)
+    file = open('./photo.jpg', 'rb')                              # Отправка фото от бота (файл в папке с кодом)
+    bot.send_photo(message.chat.id, file, reply_markup=markup)
+#    bot.send_message(message.chat.id, 'Привет', reply_markup=markup)
+    bot.register_next_step_handler(message, press_button)     # Действия со статичными кнопками
+
+def press_button(message):
+    if message.text == 'Кнопка №1':
+        bot.send_message(message.chat.id, 'Скоро в продаже')
+    elif message.text == 'Кнопка №2':
+        bot.send_message(message.chat.id, 'В наличии')
+    elif message.text == 'Кнопка №3':
+        bot.send_message(message.chat.id, 'Осталось совсем мало размеров')
 
 # Пример обработки разных типов сообщений: фото, аудио, видео, голосовые сообщения
 
