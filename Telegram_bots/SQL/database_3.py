@@ -34,9 +34,19 @@ def user_pass(message):
     cur.close()
     conn.close()
 
-    markup = telebot.types.InlineKeyboardMarkup()
-    markup.add(telebot.types.InlineKeyboardButton('Список пользователей', callback_data='users'))
-    bot.send_message(message.chat.id, 'Вы успешно зарегистрированы!', reply_markup=markup)
+    bot.send_message(message.chat.id, 'Вы успешно зарегистрированы!')
+
+@bot.message_handler(commands=['list'])
+def list(message):
+    bot.send_message(message.chat.id, 'Введите пароль высокого доступа')
+    bot.register_next_step_handler(message, pass_list)
+
+@bot.message_handler(content_types=['text'])
+def pass_list(message):
+    if message.text.strip() == '123zxc':
+        markup = telebot.types.InlineKeyboardMarkup()
+        markup.add(telebot.types.InlineKeyboardButton('Список пользователей', callback_data='users'))
+        bot.send_message(message.chat.id, 'Успешный вход!', reply_markup=markup)
 
 
 @bot.callback_query_handler(func=lambda call: True)

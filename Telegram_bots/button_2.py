@@ -14,7 +14,7 @@ def static(message):
     button2 = types.KeyboardButton('Кнопка №2')
     button3 = types.KeyboardButton('Кнопка №3')
     markup.row(button2, button3)
-    file = open('./photo.jpg', 'rb')                              # Отправка фото от бота (файл в папке с кодом)
+    file = open('button_photo.jpg', 'rb')                              # Отправка фото от бота (файл в папке с кодом)
     bot.send_photo(message.chat.id, file, reply_markup=markup)
 #    bot.send_message(message.chat.id, 'Привет', reply_markup=markup)
     bot.register_next_step_handler(message, press_button)     # Действия со статичными кнопками
