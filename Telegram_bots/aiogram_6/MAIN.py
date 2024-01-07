@@ -8,6 +8,8 @@ from utils.commands import set_commands
 from handlers.start import get_start
 from state.register import RegisterState
 from handlers.register import start_register, register_name, register_phone
+from filters.CheckAdmin import CheckAdmin
+from handlers.admin.create import create_game
 
 
 load_dotenv()
@@ -19,7 +21,7 @@ bot = Bot(token=token, parse_mode='HTML')
 dp = Dispatcher()
 
 async def start_bot(bot: Bot):
-    await bot.send_message(admin_id, text='Бот запущен!')
+    await bot.send_message(413260909, text='Бот запущен!')
 
 
 dp.startup.register(start_bot)
@@ -29,6 +31,8 @@ dp.message.register(get_start, Command(commands='start'))
 dp.message.register(start_register, F.text=='Зарегистрироваться на сайте')
 dp.message.register(register_name, RegisterState.regName)
 dp.message.register(register_phone, RegisterState.regPhone)
+# Регистрируем хендлеры с созданием игры
+dp.message.register(create_game, Command(commands='create'), CheckAdmin())
 
 async def start():
     await set_commands(bot)

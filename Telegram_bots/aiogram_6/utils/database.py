@@ -9,8 +9,10 @@ class Database():
 
     def create_db(self):
         try:
-            query = ('CREATE TABLE IF NOT EXISTS users ( id INTEGER PRIMARY KEY, user_name TEXT, user_phone TEXT, telegram_id TEXT)')
-            self.cursor.execute(query)
+            query = ('CREATE TABLE IF NOT EXISTS users ( id INTEGER PRIMARY KEY, user_name TEXT, user_phone TEXT, telegram_id TEXT);'
+                     'CREATE TABLE IF NOT EXISTS place (id INTEGER PRIMARY KEY, name_palce TEXT,  place_address TEXT);'
+                     'CREATE TABLE IF NOT EXISTS games (id INTEGER PRIMARY KEY, place_id TEXT, data_game TEXT, time_game TEXT, min_player INTEGER, max_player INTEGER, price TEXT)')
+            self.cursor.executescript(query)
             self.connection.commit()
         except sqlite3.Error as Error:
             print('Ошибка при создании:', Error)
@@ -22,6 +24,11 @@ class Database():
     def select_user_id(self, telegram_id):
         users = self.cursor.execute('SELECT * FROM users WHERE telegram_id = ?', (telegram_id,))
         return users.fetchone()
+
+    def db_select_all(self, table_name):
+        result = self.cursor.execute('SELECT * FROM {}'.format(table_name))
+        return result.fetchall()
+
 
     def __del__(self):
         self.cursor.close()
