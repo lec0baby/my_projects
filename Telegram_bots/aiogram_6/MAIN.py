@@ -7,9 +7,10 @@ from aiogram.filters import Command
 from utils.commands import set_commands
 from handlers.start import get_start
 from state.register import RegisterState
+from state.create import CreateState
 from handlers.register import start_register, register_name, register_phone
 from filters.CheckAdmin import CheckAdmin
-from handlers.admin.create import create_game
+from handlers.admin.create import create_game, select_place, select_date, select_time, select_minplayer, select_maxplayer, select_price
 
 
 load_dotenv()
@@ -33,6 +34,12 @@ dp.message.register(register_name, RegisterState.regName)
 dp.message.register(register_phone, RegisterState.regPhone)
 # Регистрируем хендлеры с созданием игры
 dp.message.register(create_game, Command(commands='create'), CheckAdmin())
+dp.callback_query.register(select_place, CreateState.place)
+dp.callback_query.register(select_date, CreateState.date)
+dp.callback_query.register(select_time, CreateState.time)
+dp.callback_query.register(select_minplayer, CreateState.minplayer)
+dp.callback_query.register(select_maxplayer, CreateState.maxplayer)
+dp.callback_query.register(select_price, CreateState.price)
 
 async def start():
     await set_commands(bot)

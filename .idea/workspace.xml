@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8febbf5b-5f6e-4250-93f6-112db4ca8de9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/filters/CheckAdmin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/handlers/admin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/handlers/admin/create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/keyboards/create_kb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/state/create.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telegram_bots/aiogram_6/.env" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telegram_bots/aiogram_6/handlers/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/handlers/register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telegram_bots/aiogram_6/register_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/MAIN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telegram_bots/aiogram_6/MAIN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/MAIN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telegram_bots/aiogram_6/handlers/admin/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/handlers/admin/create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telegram_bots/aiogram_6/keyboards/create_kb.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/keyboards/create_kb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telegram_bots/aiogram_6/state/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/state/create.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Telegram_bots/aiogram_6/tgbot_db.db" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/tgbot_db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telegram_bots/aiogram_6/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram_bots/aiogram_6/utils/database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +130,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704462731871</updated>
-      <workItem from="1704462732973" duration="62766000" />
+      <workItem from="1704462732973" duration="69442000" />
     </task>
     <servers />
   </component>
@@ -159,6 +154,6 @@
     <SUITE FILE_PATH="coverage/my_projects$weather_bot.coverage" NAME="weather_bot Coverage Results" MODIFIED="1704547238583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zador_TeleBot" />
     <SUITE FILE_PATH="coverage/my_projects$lecture_1.coverage" NAME="lecture_1 Coverage Results" MODIFIED="1704485846437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zador_TeleBot" />
     <SUITE FILE_PATH="coverage/my_projects$weather_4.coverage" NAME="weather_4 Coverage Results" MODIFIED="1704549139040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Telegram_bots/Weather_bot" />
-    <SUITE FILE_PATH="coverage/my_projects$MAIN.coverage" NAME="MAIN Coverage Results" MODIFIED="1704621340680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Telegram_bots/aiogram_6" />
+    <SUITE FILE_PATH="coverage/my_projects$MAIN.coverage" NAME="MAIN Coverage Results" MODIFIED="1704639065997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Telegram_bots/aiogram_6" />
   </component>
 </project>
